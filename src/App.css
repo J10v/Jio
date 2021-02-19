@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #292b2c;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-title {
+  font: 500 1.25rem "Lobster", cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card-img-overlay .card-title {
   color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+h1 {
+  font: 500 1.25rem "Lobster", cursive;
+  text-align: left;
+  color: white;
+  font-family: 'Myriad Pro Regular';
+}
+h2 {
+  text-align: center;
+  color:white;
+  font-family: 'Myriad Pro Regular';
+}
+p {
+  text-align: center;
+  color:white;
+  font-family: 'Myriad Pro Regular';
 }
 
-.App-link {
-  color: #61dafb;
+img {
+  height: 100px;
+  width: 100px; 
+}
+.container{
+  background-image: url(./background.jpg);
+  height: 100%;
+  width: 100%; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.photo {
+  height: 100%;
+  width: 100%;
+}
+p {
+  color:black;
+  font-family: 'Myriad Pro Regular';
+  position: absolute;
+  top: 4rem;
+  margin: 0 2rem;
+  color: black;
+  font-size: 1.5em;
+}
+p1 {
+  color:black;
+  font-family: 'Myriad Pro Regular';
+  position: absolute;
+  top: 5rem;
+  margin: 0 2rem;
+  color: black;
+  font-size: 1.5em;
+}
+figcaption {
+  position: absolute;
+  top: 2rem;
+  margin: 0 10rem;
+  color: black;
+  font-size: 1.5em;
+}
+h1, h2 {
+  color: black;
+}
+.photoo {
+  height: 33.3%;
+  width: 33.3%;
+
+}
+hr {
+  width: 100%;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #b7d0e2;
+  border: 0 none;
 }
