@@ -75,3 +75,40 @@ nav ,nav-links a:hover {
     border-bottom: 0px solid #fff;
 }
 }
+.main-section {
+    height: 90vh;
+    background-color: skyblue;
+}
+.about-section {
+    height: 100vh;
+    background-color: orange;
+}
+.contact-section {
+    height: 30vh;
+    background-color: plum;
+}
+p {
+    color:black;
+    font-family: 'Myriad Pro Regular';
+    position: absolute;
+    top: 29rem;
+    margin: 0 2rem;
+    color: black;
+    font-size: 1.5em;
+  }
+  p1 {
+    color:black;
+    font-family: 'Myriad Pro Regular';
+    position: absolute;
+    top: 5rem;
+    margin: 0 2rem;
+    color: black;
+    font-size: 1.5em;
+  }
+  figcaption {
+    position: absolute;
+    top: 16rem;
+    margin: 0 10rem;
+    color: black;
+    font-size: 1.5em;
+  }
