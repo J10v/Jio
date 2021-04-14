@@ -1,114 +1,143 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: 'poppins', sans-serif;
 }
-li {
-    list-style-type: none;
+section {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  background: url(https://live.staticflickr.com/3772/19954826630_df4860ea0f_b.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: center;
 }
-a {
-    text-decoration: none;
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-nav{
-    display: flex;
-    justify-content: space-around;
-    min-height: 10vh;
-    align-items: center;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: lightgray;
-    color: black;
+header .logo {
+  position: relative;
+  font-size: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.5em;
 }
-nav-logo {
-    font-size: 22px;
-    font-weight: 700;
-    text-transform: uppercase;
-
+header .nav {
+  position: relative;
+  display: flex;
 }
-
-nav .nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 32%;
+header .nav li {
+  list-style: none;
 }
-nav .nav-links a {
-    font-size: 18px;
-    font-weight: normal;
-    cursor: pointer;
-
+header .nav li a {
+  display: inline-block;
+  color: #fff;
+  margin-right: 40px;
+  text-decoration: none;
 }
-nav .nav-links a:hover {
-    border-bottom: 1px solid #fff;
+header .nav li a:hover {
+  color: #03a9f4
 }
-nav .burger i {
-    font-size: 20px;
+.content {
+  max-width: 600px;
 }
-nav .burger {
-    font-size: 28px;
-    display: none;
-    cursor: pointer;
+.content .contentBox h2 {
+  font-size: 4em;
+  color: #fff;
+  line-height: 1em;
 }
-@media all and (max-width: 768px) {
-    nav .burger {
-        display: block;
-    }
-
-
-nav .nav-links {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    background-color: lightgray;
-    padding: 40px;
-    width: 50%;
-    transform: translateX(-500px);
+.content .contentBox {
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 300;
+  margin: 20px 0;
 }
-nav .nav-links li {
-    padding: 25px;
-    border-bottom: 1px solid #ccc;
+.content .contentBox a {
+  display: inline-block;
+  padding: 10px 30px;
+  background: #03a9f4;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 10px;
 }
-nav .nav-links li:last-of-type {
-    border-bottom: 0px solid #ccc;
+.sci {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
 }
-nav ,nav-links a:hover {
-    border-bottom: 0px solid #fff;
+.sci li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.sci li a {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  font-size: 3em;
+  transform: scale(0.5);
+  color: #000;
 }
-.main-section {
-    height: 90vh;
-    background-color: skyblue;
+header .nav {
+  pointer-events: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.about-section {
-    height: 100vh;
-    background-color: orange;
+header .nav.active {
+  display: flex;
 }
-.contact-section {
-    height: 30vh;
-    background-color: plum;
+header .nav li a {
+  font-size: 24px;
+  margin: 10px 0;
 }
-p {
-    color:black;
-    font-family: 'Myriad Pro Regular';
-    position: absolute;
-    top: 29rem;
-    margin: 0 2rem;
-    color: black;
-    font-size: 1.5em;
-  }
-  p1 {
-    color:black;
-    font-family: 'Myriad Pro Regular';
-    position: absolute;
-    top: 5rem;
-    margin: 0 2rem;
-    color: black;
-    font-size: 1.5em;
-  }
-  figcaption {
-    position: absolute;
-    top: 16rem;
-    margin: 0 10rem;
-    color: black;
-    font-size: 1.5em;
-  }
