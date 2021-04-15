@@ -4,9 +4,9 @@ function Main() {
     return (
         <div className="main-section">
              <figcaption>
-              Hello World
+              Jiovanni Sanchez
           </figcaption>
-          <p> My name is Jiovanni Sanchez-Mclaughlin 
+          <p> Front-End Web Developer.
              </p>
         </div>
     )

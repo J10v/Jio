@@ -5,7 +5,7 @@ function Navbar() {
     const [open, setOpen] = useState(false);
 
     return (
-        <div>
+        <div className='navbar'>
             <nav>
                 <div className="logo"> JIOVANNI</div>
                 <ul className="nav-links" 
